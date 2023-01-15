@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+           
+          <h:outputText value="ONLINE FLIGHT BOOKING SYSTEM"/><br/><br/>
+          <h:outputText id="Fname" value="Fname:"/>
+          <h:inputText value="#{newLogin.Fname}"/><br/><br/>
+          <h:outputText id="Midname" value="Midname:"/>
+          <h:inputText value="#{newlogin.Midname}"/><br/><br/>
+          <h:outputText id="Surname" value="Surname:"/>
+          <h:inputText value="#{newLogin.Surname}"/><br/><br/>
+          <h:outputText id="Gender" value="Gender:"/>
+          <h:selectOneMenu>
+          <f:selectItem itemLabel="Male"/>
+          <f:selectItem itemLabel="Female"/> 
+          </h:selectOneMenu><br/><br/>
+          <h:outputText id="From" value="From:"/>
+          <h:inputText value="#{newLogin.from}"/><br/><br/>
+          <h:outputText id="To" value="To:"/>
+          <h:inputText value="#{newLogin.To}"/><br/><br/>
+          <h:outputText id="DepartureDate" value="DepartureDate:"/>
+          <h:inputText value="#{newLogin.Departure}"/><br/><br/>
+          <h:outputText id="ReturnDate" value="ReturnDate:"/>
+          <h:inputText value="#{newLogin.Returndate}"/><br/><br/>      
+   </h:form>
+    </h:body>
+</html>
+
